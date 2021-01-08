@@ -1,11 +1,12 @@
 package com.example.demo;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 //@ComponentScan("com.example.demo")
+@PropertySource("classpath:sport.properties")
 public class SportConfig {
     //define bean for our sad fortune service
     @Bean

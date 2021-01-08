@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 
 public class SwimCoach implements Coach{
-    @Qualifier("sadFortuneService")
     private FortuneService fortuneService;
 
     public SwimCoach(FortuneService theFortuneService){
